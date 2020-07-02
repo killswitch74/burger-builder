@@ -1,0 +1,46 @@
+/* For MOBILE Devices */
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    text-decoration: none;
+    /* height: 100%; */
+}
+
+.NavigationItems nav {
+    height: 100%;
+}
+
+/* For DESKTOP Devices */
+@media (min-width: 500px) {
+    .NavigationItems {
+        flex-flow: row;
+    }
+}
+
+.NavigationItemsM {
+    margin: 0;
+    padding: 5% 5%;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: baseline;
+    /* height: 100%; */
+}
+
+
+.NavigationItems a:hover {
+    background-color: #e78200;
+    border-bottom: 4px solid #A0DB41;
+    color: white;
+}
+
+.NavigationItems a:active,
+.NavigationItems a.active {
+    background-color: #cd7400;
+    border-bottom: 4px solid #A0DB41;
+    color: white;
+}
